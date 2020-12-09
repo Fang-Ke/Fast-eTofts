@@ -1,0 +1,16 @@
+[train]
+dataset = "DCE-MRI/train"
+batch = 64
+lr = 0.0005
+max_epoch = 200
+
+[test]
+dataset = "DCE-MRI/test"
+batch = 64
+
+[protocol]
+r1 = 3.7
+TR = 0.006
+# flip angle
+alpha = 10
+deltt = 4.5
