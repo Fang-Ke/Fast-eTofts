@@ -101,11 +101,11 @@ Usage:
 
 Options:
     --gpu            Int, Specify the graphics device, the default is 0
-    --weight   		 Int, fit loss weight, default 40
+    --weight   	     Int, fit loss weight, default 40
     --stop_num       Early stop number, default 5, 
     --lr             Initial learning rate, default 0.0005
     --name           Experiment name, default "train"
-    --strategy       Training strategy, select from  'synthetic', 'patient', 					  'fine_tune' or 'mix'
+    --strategy       Training strategy, select from  'synthetic', 'patient', 'fine_tune' or 'mix'
 Return: 
 	Generate a file named
 	"exp/$name$/$strategy$_$weight$_$stop_num$_&lr&_$datatime$/
@@ -127,7 +127,7 @@ Usage:
 
 Options:
     --gpu            Int, Specify the graphics device, the default is 0
-    --model_path	 File or directory path, Specify the path of model 							 parameter.	 If a directory, the complete model path will 					   be completed as "$model_path$/best_patient.tar"
+    --model_path     File or directory path, Specify the path of model  parameter.  If a directory, the complete model path will be completed as "$model_path$/best_patient.tar"
 Return: 
 	Generate files named
 	"$model_path$/test_result_patientXX.txt"
